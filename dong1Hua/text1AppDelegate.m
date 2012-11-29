@@ -7,7 +7,7 @@
 //
 
 #import "text1AppDelegate.h"
-#import "rootViewController.h"
+
 @implementation text1AppDelegate
 
 @synthesize window = _window;
@@ -24,11 +24,6 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
-    rootViewController *rootVC=[[rootViewController alloc]init];
-    self.window.rootViewController=rootVC;
-    [rootVC release];
-    
     return YES;
 }
 
